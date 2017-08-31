@@ -1,7 +1,12 @@
 public class Tarjeta
 {
+    // Variables de Instancia
     private float saldo;
     
+    /**
+     * Constructor
+     * @author Priscila Hernandez
+     */
     public Tarjeta()
     {
         saldo=0;

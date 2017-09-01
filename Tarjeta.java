@@ -9,28 +9,40 @@ public class Tarjeta
      */
     public Tarjeta()
     {
-        saldo=0;
+        saldo = 0;
     }
     
+    /**
+     * Suma a la variable saldo la cantidad que le des.
+     * @param dinero Cantidad de dinero a depositar.
+     */
     public void depositar(float dinero)
     {
-        if(saldo>=0)
+        if(saldo >= 0)
         {
-            saldo=saldo+dinero;
+            saldo = saldo + dinero;
         }
     }
     
+    /**
+     * Resta a la variable saldo la cantidad que le des.
+     * @param dinero Cantidad de dinero a retirar.
+     * @return Regresa el dinero si su saldo es de mayor valor que la pedida, de lo contrario 0.
+     */
     public float retirar(float dinero)
     {
-        if(saldo>=dinero)
+        if(saldo >= dinero)
         {
-            saldo=saldo-dinero;
+            saldo = saldo - dinero;
             return dinero;
         }
         else
             return 0;
     }
     
+    /**
+     * Te muestra el valor de tu saldo.
+     */
     public void consultar()
     {
         System.out.print("\f");
